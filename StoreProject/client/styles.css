@@ -1,0 +1,275 @@
+
+/* .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+.row.no-gutters > [class^="col-7"],
+.row.no-gutters > [class*=" col-5"] {
+    padding-right: 0;
+    padding-left: 0;
+  } */
+.container .col-7 {
+    /* Container Border */
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+.container .col-5 {
+    background-color: #DDDDDD;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    }
+
+.btn2 {
+    background-color: white;
+    text-align: center;
+    color: orange;
+}
+input[type="text"], textarea {
+      background-color : #dddddd; 
+}
+input[type="number"], textarea {
+      background-color : #dddddd; 
+}
+input[type="email"], textarea {
+    background-color : #dddddd; 
+}
+input[type=""], textarea {
+    background-color : #dddddd; 
+}
+
+#apparel-pic {
+    background: url("/images/covalence-store-apparel-hero.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+#misc-pic {
+    background: url("/images/covalence-store-misc-hero.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+.welcome-page {
+    background: url("images/covalence-store-home.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    /* height: 1000px; */
+    min-width: 100%; 
+    /* max-width: 100%;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+}
+
+.welcome-title{
+    padding-top: 25%;
+    padding-left: 10%;
+}
+
+.footer .container {
+    float: left;
+}
+
+#navbar {
+    opacity: 0.9;
+    color: #00c9cc;
+}
+
+.menu-wrap {
+    margin-top: 5%;
+    background-color: #DDDDDD;
+    position: fixed;
+    top: 0;
+    height: 95%;
+    width: 350px;
+    font-size: 1em;
+    font-weight: 700;
+    overflow: auto;
+    transition: .25s;
+    z-index: 10;
+    right: -350px;
+}
+
+.blue-bar {
+    height: 3.5em;
+    background-color: #00c9cc;
+    width: 350px;
+ }
+
+.closebtn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    padding-left: 8%;
+    padding-top: 5%;
+} 
+
+.menu-show {
+   right:0;
+}
+
+.footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    background-image: url("/images/Newlogo.png") no-repeat;
+    /* padding: 5px; */
+}
+
+.list-pic {
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    width: 75%;
+    height: 75%;
+    /* display: inline-block; */
+}
+
+#single-product-pic {
+    /* padding-right: 20%; */
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+#single-product-description {
+    /* padding-right: 20%; */
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.img-responsive {
+    width: 100%;
+    display: inline-block;
+}
+
+.product-box{
+    display: inline-block;
+}
+
+.product-title{
+    margin-left: 10%;
+}
+
+.product-price {
+    margin-left: 10%;
+}
+
+h1 {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    color: gray;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+h3 {
+    color: gray;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+h4 {
+    color: gray;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+h5 {
+    color: #00c9cc;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+h6 {
+    color: gray;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+h7 {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#circle {
+    border: 2px solid #00c9cc;
+    background-color: #00c9cc;
+    height: 30px;
+    border-radius:50%;
+    width: 30px;
+}
+
+#contact-form {
+    position: center;
+    float: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 30%;
+    width: 25%;
+}
+
+#checkout-form {
+    position: left;
+    float: left;
+    text-align: left;
+    margin: auto;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+    width: 25%;
+    background-color: transparent;
+}
+
+#checkout-box {
+    position: center;
+    float: center;
+    margin: auto;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+    width: 25%;
+    outline: 5px, black;
+    background-color: transparent;
+}
+
+#cart-value {
+    padding-top: 2;
+    padding-left: 8px;
+    color: white;
+}
+
+#cart-summary {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+#cart-link {
+    padding-right: 7px;
+}
+
+/* photo 20em wide */
+
+#cart-img {
+    width: 55%;
+    height: 55%;
+}
+
+.cart-img {
+    width: 95%;
+    height: 95%;
+}

@@ -1,0 +1,7 @@
+export HOST="us-cdbr-iron-east-05.cleardb.net"
+export USER="be3dd09bf55d34"
+export PASSWORD="6245a315"
+export DATABASE="heroku_299639be5f20180"
+export STRIPE_SECRET_KEY="sk_test_gBINUtK1sJWfCVlg2QSLspHg"
+export SENDGRID_API_KEY="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"
+export PRERENDER_TOKEN="zAFjTT6K0xyWJcAWPAea"

@@ -1,0 +1,87 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
+    <!-- <a class="navbar-brand" "/images/Newlogo.png" href="/welcome"></a> -->
+    <a href="/welcome" class="navbar-left"><img src="/images/Newlogo.png" width="170" height="30">&nbsp &nbsp</a>
+    <!-- <h5> | </h5> -->
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+    <div class="collapse navbar-collapse " id="nav-container">
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+                <H2> | </H2>
+            </li>
+            <li class="nav-item  {{ activePage === 'apparellist' ? 'active' : '' }}">
+                <a class="nav-link" id="navs" href="/apparellist">Apparel</a>
+            </li>
+            <li class="nav-item  {{ activePage === 'misclist' ? 'active' : '' }}">
+                <a class="nav-link" id="navs" href="/misclist">Misc</a>
+            </li>
+            <li class="nav-item  {{ activePage === 'contact' ? 'active' : '' }}">
+                <a class="nav-link" id="navs" href="/contact">Contact Us</a>
+            </li>
+
+        </ul>
+        <a href="/checkout" class="navbar-right">
+            <h7 id="cart-link">Cart</h7>
+        </a>
+        <h7> </h7>
+        <!-- checkout circle button -->
+        <a class="navbar-right" id='circle'>
+            <div id="cart-value">{{ cart.length }}</div>
+        </a>
+
+    </div>
+</nav>
+<div class="menu-wrap">
+
+    <div class="cart-container">
+        <div class="blue-bar">
+            <!-- <button class="closebtn">Close</button> -->
+        </div>
+        <div class="cart">
+            </br>
+
+            <!-- All the shopping cart items -->
+        </div>
+    </div>
+
+    <div class="menu-sidebar">
+        <h4 style="color:rgba(44, 45, 62, 0.93); font-family: sans-serif; font-weight:bold;"> &nbsp &nbsp Your Shopping Cart </h4>
+    </br>
+    <div class="input-group center-block" ng-repeat="product in cart">
+            
+                            <div class="center-block" >
+                                <div class="center-block">
+                                    <img class="cart-img" id="cart-img" src="{{ product.imageurl }}" alt="cartpic">
+                                </div>
+            
+                                <div class="center-block">
+                                        {{ product.title }}
+                                        <div class="product-right">${{ product.price }}</div>
+                                        <button id="cancel-return" class="btn btn-xs" style="margin-top: 0.25em; float: center;" ng-click="removeItem(product)">Remove</button></div><br>
+                                </div>
+                            </div>
+                        </br>
+                            <h3>Order Summary</h3>
+                                <input class="form-control" type="text" ng-model="discountValue" placeholder="Discount Code"><button class="btn apply" ng-click="applyDiscount()">Apply</button>
+                                    <br>
+                        </br>
+                                <div class="center-block">
+                                    <h4>Order Total:</h4>
+                                </div>
+            
+                                <div class="center-block">
+                                    <h4 class="currency-b">{{ total | currency}}</h4>
+                                </div>
+                            </div>
+</br>
+
+        <h6 style="text-align: center;"> _______________________________ </h6>
+
+        <h6 style="color:gray; text-align:center;"> Taxes and fees included at checkout </h6>
+        <button type="button" class="btn btn-info" style="float:center;" ng-href="/checkout"> &nbsp &nbsp &nbsp &nbsp CHECK OUT &nbsp &nbsp &nbsp &nbsp</button>
+
+    </div>
+</div>
+</div>

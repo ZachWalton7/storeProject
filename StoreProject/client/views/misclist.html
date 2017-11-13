@@ -1,0 +1,13 @@
+<main-navigation active-page="'misclist'"></main-navigation>
+
+<div class="jumbotron jumbotron-fluid" id="misc-pic"></div>
+
+<div class="container">
+<div class="row">
+
+<div class="product-box" ng-repeat="product in products">
+                
+        <div class="col-sm"></div>
+        <img class="list-pic" ng-src="{{ product.imageurl }}" ng-click="changeView(product.id)">
+        <h4 class="product-title">{{ product.title }}</h4><h5 class="product-price">${{ product.price }}</h5>
+</div>

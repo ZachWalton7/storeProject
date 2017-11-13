@@ -1,0 +1,46 @@
+<main-navigation active-page="'apparellist'"></main-navigation>
+
+<div class="row justify-content-center">
+    <div class = "col-md-5" id="single-product-pic"> 
+        <img ng-src="{{ product.imageurl }}" class="img-responsive">
+    </div>
+    <div class="clearfix"></div>
+        <div class="col-md-6" id="single-product-description">
+        <h5>${{ product.price }}</h5>
+        <h3>{{ product.title }}</h3>
+        <p> {{ product.description }}</p>
+    <div class="button-block">
+        <button class="btn btn-info btn-sm" ng-click="addItem()">Add to cart</button>
+    </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</div>
+        </div>
+
+        <!-- <img src="https://placehold.it/468x307" class="img-responsive"> -->
+
+        <!-- <main-navigation active-page="'apparellist'"></main-navigation> -->
+        
+        <!-- <div class="row">
+        <div class="product">
+            <div class="col-md-6">
+            <img class="single-pic" ng-src="{{ product.imageurl }}">
+            </div>
+            <div class="col-md-6">
+                    <h1>{{ product.title }}</h1>
+            <p> {{ product.description }}</p>
+            <h5>{{ product.price }}</h5>
+            <h5>file under: {{ product.category}}</h5>
+            <h6>{{ product.timestamp | date: 'M/d/yyyy HH:mm:ss' }}</h6>
+        </div>
+        </div>
+        
+        <button class="button" ng-click="goToUpdate()" id="update">Add to Cart</button>
+         -->
+    

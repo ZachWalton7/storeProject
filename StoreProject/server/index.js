@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const path_1 = require("path");
+const express = require("express");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+const api_1 = require("./api");
+const routing_mw_1 = require("./middleware/routing.mw");
+const clientPath = path_1.join(__dirname, '../client');
+const app = express();
+const prerender = require('prerender-node');
+prerender.set('prerenderToken', process.env.PRERENDER_TOKEN);
+app.use(prerender);
+app.use(express.static(clientPath));
+app.use(cookieParser());
+app.use(bodyParser.json());
+app.use('/api', api_1.default);
+app.get('*', routing_mw_1.default);
+app.listen(process.env.PORT || 3001, () => {
+    console.log('listening on port 3001');
+});

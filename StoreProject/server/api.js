@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const product_ctrl_1 = require("./controllers/product.ctrl");
+const contactform_ctrl_1 = require("./controllers/contactform.ctrl");
+const purchases_ctrl_1 = require("./controllers/purchases.ctrl");
+const categories_ctrl_1 = require("./controllers/categories.ctrl");
+const payments_ctrl_1 = require("./controllers/payments.ctrl");
+const router = express_1.Router();
+router.use('/product', product_ctrl_1.default);
+router.use('/contactforms', contactform_ctrl_1.default);
+router.use('/purchases', purchases_ctrl_1.default);
+router.use('/categories', categories_ctrl_1.default);
+router.use('/payments', payments_ctrl_1.default);
+exports.default = router;
